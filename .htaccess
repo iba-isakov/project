@@ -1,0 +1,8 @@
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^something/num_to_str/([0-9]+)/$   RestController.php?num_to_str=$1 [nc,qsa]
+RewriteRule ^something/Quad/a=(.+)&b=(.+)&c=(.+)/$   RestController.php?Quad=true&a=$1&b=$2&c=$3 [nc,qsa]
+RewriteRule ^something/date=(.+)/$   RestController.php?date=$1 [nc,qsa]
+RewriteRule ^something/fibonacci/([0-9]+)/$   RestController.php?fib_number=$1 [nc,qsa]
+RewriteRule ^something/region/([0-9]+)/$   RestController.php?region=$1 [nc,qsa]
